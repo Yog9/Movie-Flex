@@ -1,0 +1,16 @@
+.footer {
+  padding: 30px 0;
+  background-color: black;
+  color: #fff;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.copyright-name {
+  margin-bottom: 10px;
+}
+.footer-img {
+  width: 250px;
+  justify-self: end;
+}

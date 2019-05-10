@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Switch,
+  Route
+} from "react-router-dom";
+import VerticalNav from "./components/VerticalNav.js/VerticalNav";
+import Movies from "./components/Movies/Movies";
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <React.Fragment>
+          <VerticalNav />
+          <Switch>
+            <Route exact path="/movies" component={Movies} />
+            <Route
+              expact
+              path="/"
+              component={() => <Redirect to="/movies" />}
+            />
+          </Switch>
+        </React.Fragment>
+      </Router>
+    );
+  }
 }
 
 export default App;

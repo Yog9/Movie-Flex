@@ -1,0 +1,24 @@
+.home-container {
+  background: #0b1114 /*#01070c*/;
+
+  /* background: linear-gradient(165deg, #251431 0%, #161130 22%); */
+}
+
+.section-separator {
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+  background-image: -webkit-radial-gradient(
+    circle,
+    rgba(210, 208, 208, 0.190914) 0%,
+    rgba(210, 208, 208, 0) 90%
+  );
+  border: none;
+  height: 1px;
+}
+.pb-6 {
+  padding-bottom: 50px;
+}
+.section-separator-last {
+  margin-bottom: 0;
+}
