@@ -16,6 +16,14 @@
   height: 100%;
   color: #fff;
 }
-.v-img {
-  width: 100%;
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+.slick-dots li button:before {
+  font-size: 15px;
+}
+
+.slick-dots {
+  bottom: 25px;
 }

@@ -17,6 +17,7 @@ export default function VerticalMovieCarousel(props) {
     verticalSwiping: true,
     arrows: false
   };
+
   const path = "https://image.tmdb.org/t/p/";
   const imgSize = "w1280";
   return (
