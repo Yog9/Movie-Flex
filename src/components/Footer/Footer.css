@@ -7,8 +7,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.copyright-name {
+.copyright-name,
+.copyright-para {
   margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 .footer-img {
   width: 250px;

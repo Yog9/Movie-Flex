@@ -2,8 +2,17 @@ import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "./HorizontalMoviesCarousel.css";
-export default function HorizontalMovieCarousel({ carouselName, movies }) {
-  //return <h1>hello</h1>;
+export default function HorizontalMovieCarousel(props) {
+  const { carouselName, movies } = props;
+  const handleGenreName = genreId => {
+    let mainGenre = "";
+    if (props.genre) {
+      props.genre.map(genre => {
+        if (genreId === genre.id) mainGenre = genre.name;
+      });
+    }
+    return mainGenre;
+  };
   const settings = {
     dots: false,
     arrows: true,
@@ -64,7 +73,7 @@ export default function HorizontalMovieCarousel({ carouselName, movies }) {
                   alt={movie.title}
                   className="carousel-img"
                 />
-                <p class="rating">
+                <p className="rating">
                   <svg
                     className="rating-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -77,6 +86,9 @@ export default function HorizontalMovieCarousel({ carouselName, movies }) {
               </Link>
               <figcaption>
                 <h5 className="movie-name">{movie.title}</h5>
+                <p className="genre_name">
+                  {handleGenreName(movie.genre_ids[0])}
+                </p>
               </figcaption>
             </figure>
           ))}

@@ -9,7 +9,7 @@ export const getgenre = () => dispatch => {
     .then(res =>
       dispatch({
         type: GET_GENRE,
-        payload: res.data
+        payload: res.data.genres
       })
     );
 };

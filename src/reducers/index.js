@@ -10,9 +10,8 @@ import recommendedmoviesReducer from "./movie_reducers/recommendedmoviesReducer"
 import similarmoviesReducer from "./movie_reducers/similarmoviesReducer";
 import topratedmoviesReducer from "./movie_reducers/topratedmoviesReducer";
 import upcomingmoviesReducer from "./movie_reducers/upcomingmoviesReducer";
-import latestmoviesReducer from "./movie_reducers/latestmoviesReducer";
 import genreReducer from "./movie_reducers/genreReducer";
-
+import trendingmoviesReducer from "./movie_reducers/trendingmoviesReducer";
 export default combineReducers({
   //all state
   moviecasts: moviecastReducer,
@@ -25,6 +24,6 @@ export default combineReducers({
   similarMovies: similarmoviesReducer,
   topratedMovies: topratedmoviesReducer,
   upcomingMovies: upcomingmoviesReducer,
-  latestMovies: latestmoviesReducer,
-  genre: genreReducer
+  genre: genreReducer,
+  trendingMovies: trendingmoviesReducer
 });

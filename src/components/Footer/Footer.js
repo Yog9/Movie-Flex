@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid-footer">
           <div className="copyright">
             <p className="copyright-name">Copyright ©2018</p>
-            <p>Code and design by Yogita Verma</p>
+            <p className="copyright-para">Code and design by Yogita Verma</p>
           </div>
           <img
             className="footer-img"

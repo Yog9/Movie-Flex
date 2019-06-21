@@ -1,6 +1,6 @@
 import { GET_SIMILAR_MOVIES } from "../types";
-import url_movie from "../../config/config";
-import API_KEY from "../../config/config";
+import { url_movie } from "../../config/config";
+import { API_KEY } from "../../config/config";
 import axios from "axios";
 
 export const getsimilarMovies = id => dispatch => {
@@ -9,7 +9,7 @@ export const getsimilarMovies = id => dispatch => {
     .then(res =>
       dispatch({
         type: GET_SIMILAR_MOVIES,
-        payload: res.data
+        payload: res.data.results.slice(0, 7)
       })
     );
 };

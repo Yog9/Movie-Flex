@@ -1,6 +1,6 @@
 import { GET_MOVIE_TRAILER } from "../types";
-import url_movie from "../../config/config";
-import API_KEY from "../../config/config";
+import { url_movie } from "../../config/config";
+import { API_KEY } from "../../config/config";
 import axios from "axios";
 
 export const getmovieTrailer = id => dispatch => {
@@ -9,7 +9,7 @@ export const getmovieTrailer = id => dispatch => {
     .then(res =>
       dispatch({
         type: GET_MOVIE_TRAILER,
-        payload: res.data
+        payload: res.data.results.slice(0, 1)
       })
     );
 };

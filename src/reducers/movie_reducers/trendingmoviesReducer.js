@@ -1,13 +1,13 @@
-import { GET_LATEST_MOVIES } from "../../actions/types";
+import { GET_TRENDING_MOVIES } from "../../actions/types";
 const initialState = {
-  latestMovies: []
+  trendingMovies: []
 };
 export default (state = initialState, action) => {
   switch (action.type) {
-    case GET_LATEST_MOVIES:
+    case GET_TRENDING_MOVIES:
       return {
         ...state,
-        latestMovies: action.payload
+        trendingMovies: action.payload
       };
     default:
       return state;

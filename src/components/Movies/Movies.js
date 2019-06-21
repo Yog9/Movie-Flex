@@ -4,7 +4,7 @@ import { getpopularMovies } from "../../actions/movie_actions/getpopularMovies";
 import { getnowplayingMovies } from "../../actions/movie_actions/getnowplayingMovies";
 import { gettopratedMovies } from "../../actions/movie_actions/gettopratedMovies";
 import { getupcomingMovies } from "../../actions/movie_actions/getupcomingMovies";
-import { getlatestMovies } from "../../actions/movie_actions/getlatestMovies";
+import { gettrendingMovies } from "../../actions/movie_actions/gettrendingMovies";
 import { getgenre } from "../../actions/movie_actions/getgenre";
 import VerticalMovieCarousel from "../VerticalMovieCarousel/VerticalMovieCarousel";
 import "./Movies.css";
@@ -16,6 +16,7 @@ class Movies extends Component {
     this.props.getnowplayingMovies();
     this.props.gettopratedMovies();
     this.props.getupcomingMovies();
+    this.props.gettrendingMovies();
     this.props.getgenre();
   }
   render() {
@@ -34,17 +35,27 @@ class Movies extends Component {
             <HorizontalMovieCarousel
               carouselName="Popular"
               movies={this.props.popularMovies}
+              genre={this.props.genre}
+            />
+            <hr className="section-separator" />
+            <HorizontalMovieCarousel
+              carouselName="Trending"
+              movies={this.props.trendingMovies}
+              genre={this.props.genre}
             />
             <hr className="section-separator" />
             <HorizontalMovieCarousel
               carouselName="Top Rated"
               movies={this.props.topratedMovies}
+              genre={this.props.genre}
             />
             <hr className="section-separator" />
             <HorizontalMovieCarousel
               carouselName="Upcoming"
               movies={this.props.upcomingMovies}
+              genre={this.props.genre}
             />
+            <hr className="section-separator" />
           </div>
         </div>
         <Footer />
@@ -57,6 +68,7 @@ const mapStateToProps = state => ({
   nowplayingMovies: state.nowplayingMovies.nowplayingMovies,
   topratedMovies: state.topratedMovies.topratedMovies,
   upcomingMovies: state.upcomingMovies.upcomingMovies,
+  trendingMovies: state.trendingMovies.trendingMovies,
   genre: state.genre.genre
 });
 export default connect(
@@ -66,6 +78,7 @@ export default connect(
     getnowplayingMovies,
     gettopratedMovies,
     getupcomingMovies,
+    gettrendingMovies,
     getgenre
   }
 )(Movies);

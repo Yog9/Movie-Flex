@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import VerticalNav from "./components/VerticalNav.js/VerticalNav";
 import Movies from "./components/Movies/Movies";
+import MovieDetails from "./components/Movies/MovieDetails";
 class App extends Component {
   render() {
     return (
@@ -17,10 +18,11 @@ class App extends Component {
           <Switch>
             <Route exact path="/movies" component={Movies} />
             <Route
-              expact
+              exact
               path="/"
               component={() => <Redirect to="/movies" />}
             />
+            <Route exact path="/movie/details/:id" component={MovieDetails} />
           </Switch>
         </React.Fragment>
       </Router>
