@@ -22,7 +22,7 @@ class App extends Component {
               path="/"
               component={() => <Redirect to="/movies" />}
             />
-            <Route exact path="/movie/details/:id" component={MovieDetails} />
+            <Route path="/movies/details/:id" component={MovieDetails} />
           </Switch>
         </React.Fragment>
       </Router>

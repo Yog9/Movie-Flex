@@ -7,7 +7,7 @@ export const getmovieCasts = id => dispatch => {
   axios.get(`${url_movie}/${id}/casts?api_key=${API_KEY}`).then(res =>
     dispatch({
       type: GET_MOVIE_CASTS,
-      payload: res.data.slice(0, 10)
+      payload: res.data.cast.slice(0, 10)
     })
   );
 };

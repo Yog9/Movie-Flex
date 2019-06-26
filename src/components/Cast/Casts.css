@@ -1,0 +1,51 @@
+.carousel-title {
+    color: #fff;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    padding: 20px 0;
+  
+    text-transform: uppercase;
+  }
+  .carousel-img {
+    width: 95%;
+    margin-top: 0;
+    height: 210px;
+    border-radius: 5px;
+    opacity: 0.6;
+    margin-right: 3px;
+  }
+  .carousel-img:hover {
+    opacity: 1;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    transform: scale(1.05);
+  }
+  .slick-prev {
+    top: 105px;
+    left: -2px;
+    border: 0;
+    width: 30px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7) !important;
+    height: 210px;
+    border-radius: 5px;
+  }
+  .slick-next {
+    top: 105px;
+    right: 4.9px;
+    border: 0;
+    width: 30px;
+    border-radius: 5px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7) !important;
+    height: 210px;
+  }
+  .cast-name {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    margin: 5px 0 0;
+    margin-top: 8px;
+    width: 135px;
+  }

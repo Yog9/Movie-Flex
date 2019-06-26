@@ -1,0 +1,113 @@
+.cover-image{
+    display: block;
+    height: 90vh;
+    width: 100%;
+    padding-bottom: 10px;
+}
+body{
+    background: #1f2534
+}
+
+
+.container {
+    width: 85vw;
+    margin: auto;
+}
+.moviedetails h2{
+    margin-left:30px;
+    color:white;
+    margin-bottom:10px;
+}
+.movies{
+    display:grid;
+    grid-template-columns: 250px 1fr 200px;
+    color:white;
+
+}
+.tagline{
+    color:white;
+    display:inline-block;
+}
+.user-score{
+    display: flex;
+    width: 70px;
+    margin-left: 27px;
+    justify-content: space-between;
+}
+.play-trailer svg{
+    width: 0.875em;
+fill:white;
+height: 1em;
+}
+.play-trailer{
+    border-radius: 2px;
+    margin: 0 5px;
+    -webkit-transition: all .2s cubic-bezier(.215,.61,.355,1);
+    transition: all .2s cubic-bezier(.215,.61,.355,1);
+    background: #bbcfff;
+    cursor: pointer;
+    color: #fff;
+    height: 40px;
+    padding: 0 10px;
+    background: transparent;
+    border: .5px solid #fff;
+    outline: none;
+
+}
+.play-trailer-content{
+    margin-left: 5px;
+}
+.play-trailer:hover {
+    color: #fff;
+    background: red;
+    border: .5px solid red;
+}
+.vote-count{
+    margin-left:27px;
+    padding-top:19px;
+}
+
+.main{
+    padding: 4rem 0 4rem 0;
+
+}
+.synopsis p{
+    margin-top:10px;
+}
+.transparent-pill{
+    border: 1px solid #fff;
+    font-family: inherit;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: .7rem;
+    font-weight: 400;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    background: rgba(17,17,17,.1);
+}
+.genre-list{
+    display:flex;
+    margin-left:27px;
+}
+.review-container,.review-empty{
+    background: #1C262B;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+    padding: 1rem 2rem;
+    border-left: 5px solid #fff;
+}
+.review-empty{
+    text-align: center;
+    color:white;
+}
+.review h2{
+    color: #fff;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    padding: 25px 0;
+    text-transform: uppercase;
+}

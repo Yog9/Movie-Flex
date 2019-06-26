@@ -9,7 +9,7 @@ export const getmovieReviews = id => dispatch => {
     .then(res =>
       dispatch({
         type: GET_MOVIE_REVIEWS,
-        payload: res.data.results.slice(0, 3)
+        payload: res.data.results.slice(0, 2)
       })
     );
 };
