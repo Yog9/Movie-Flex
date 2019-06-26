@@ -6,10 +6,13 @@ import axios from "axios";
 export const getsimilarMovies = id => dispatch => {
   axios
     .get(`${url_movie}/${id}/similar?api_key=${API_KEY}&language=en-US&page=1`)
-    .then(res =>
+    .then(res => {
       dispatch({
         type: GET_SIMILAR_MOVIES,
         payload: res.data.results.slice(0, 7)
       })
+      console.log("res: ", res.data);
+    }
+
     );
 };
