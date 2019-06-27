@@ -1,0 +1,16 @@
+.container {
+  width: 85vw;
+  margin: auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #0b1114 /*#01070c*/;
+}
+* {
+  margin: 0;
+}

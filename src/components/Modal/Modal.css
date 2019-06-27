@@ -1,0 +1,53 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  iframe{
+      width:100%;
+      height:100%;
+  }
+  .no-trailer{
+      text-align:center;
+      color:white;
+      font-size: 20px;
+      font-style: bold;
+  }
+  .modal-main {
+    position:fixed;
+    width: 70%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  
+  
+    .close {
+        color: #fff;
+        font-size: 2rem;
+        background: transparent;
+        outline: none;
+        border: none;
+        position: relative;
+        top:-70px;
+        float:right;
+  }
+  .close:focus, .close:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    color: tomato;
+}
