@@ -5,7 +5,7 @@ import { itemsLoading } from "../../actions/itemsLoading";
 import axios from "axios";
 
 export const getmovieDetails = id => dispatch => {
-  dispatch(itemsLoading({ type: ITEMS_LOADING }, true));
+  dispatch(itemsLoading(true));
   axios
     .get(`${url_movie}/${id}?api_key=${API_KEY}&language=en-US`)
     .then(res =>
@@ -13,5 +13,5 @@ export const getmovieDetails = id => dispatch => {
         type: GET_MOVIE_DETAILS,
         payload: res.data
       })
-    ).then(res => dispatch(itemsLoading({ type: ITEMS_LOADING }, false)))
+    ).then(res => dispatch(itemsLoading(false)))
 };

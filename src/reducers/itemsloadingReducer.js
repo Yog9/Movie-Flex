@@ -5,7 +5,10 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case ITEMS_LOADING:
-            return state;
+            return {
+                ...state,
+                isLoading: action.payload
+            };
         default:
             return state;
     }

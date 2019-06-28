@@ -22,6 +22,8 @@ import similartvshowsReducer from "./tv_reducers/similartvshowsReducer";
 import populartvshowsReducer from "./tv_reducers/populartvshowsReducer";
 import onairtvshowsReducer from "./tv_reducers/onairtvshowsReducer";
 import airingtodaytvshowsReducer from "./tv_reducers/airingtodaytvshowsReducer";
+import itemsloadingReducer from "./itemsloadingReducer";
+import searchReducer from "./searchReducer";
 
 export default combineReducers({
   //all state
@@ -38,6 +40,8 @@ export default combineReducers({
   genre: genreReducer,
   trendingMovies: trendingmoviesReducer,
 
+  isLoading: itemsloadingReducer,
+  searchResults: searchReducer,
   tvcasts: tvcastReducer,
   tvdetails: tvdetailsReducer,
   tvgenre: tvgenreReducer,
