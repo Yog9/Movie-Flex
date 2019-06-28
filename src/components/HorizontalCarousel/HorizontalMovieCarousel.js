@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import "./HorizontalMoviesCarousel.css";
+import "./HorizontalCarousel.css";
 export default function HorizontalMovieCarousel(props) {
   const { carouselName, movies } = props;
   const handleGenreName = genreId => {

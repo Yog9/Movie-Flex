@@ -9,7 +9,7 @@ export const gettopratedTvshows = () => dispatch => {
         .then(res => {
             dispatch({
                 type: GET_TOPRATED_TVSHOWS,
-                payload: res.data.results.slice(0, 7)
+                payload: res.data.results.slice(0, 12)
             })
         }
 

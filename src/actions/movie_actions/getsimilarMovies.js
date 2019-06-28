@@ -1,9 +1,11 @@
-import { GET_SIMILAR_MOVIES } from "../types";
+import { GET_SIMILAR_MOVIES, ITEMS_LOADING } from "../types";
 import { url_movie } from "../../config/config";
 import { API_KEY } from "../../config/config";
 import axios from "axios";
+import { itemsLoading } from "../itemsLoading";
 
 export const getsimilarMovies = id => dispatch => {
+  dispatch(itemsLoading({ type: ITEMS_LOADING }, true));
   axios
     .get(`${url_movie}/${id}/similar?api_key=${API_KEY}&language=en-US&page=1`)
     .then(res => {
@@ -14,5 +16,5 @@ export const getsimilarMovies = id => dispatch => {
       console.log("res: ", res.data);
     }
 
-    );
+    ).then(res => dispatch(itemsLoading({ type: ITEMS_LOADING }, false)))
 };

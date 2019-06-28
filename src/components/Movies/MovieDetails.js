@@ -36,6 +36,15 @@ class MovieDetails extends Component {
     this.props.getmovieDetails(id);
     this.props.getrecommendedMovies(id);
   }
+  componentWillReceiveProps(prevProps) {
+    if (prevProps.match.params.id !== this.props.match.params.id) {
+      const newId = prevProps.match.params.id;
+      this.props.getmovieDetails(newId);
+      this.props.getrecommendedMovies(newId);
+      this.props.getmovieCasts(newId);
+      this.props.getmovieTrailer(newId);
+    }
+  }
   render() {
 
     const path = 'https://image.tmdb.org/t/p/'
@@ -48,14 +57,7 @@ class MovieDetails extends Component {
       recommendedMovies
     } = this.props;
     console.log("props", this.props)
-    if (
-      !moviedetails.length &&
-      !moviecasts.length &&
-      !movietrailers.length &&
-      !recommendedMovies.length
-    ) {
-      return <Loading />
-    }
+
     return (
       <React.Fragment>
 
@@ -110,11 +112,11 @@ class MovieDetails extends Component {
               <p>{moviedetails.overview}</p>
             </div>
             <CastCarousel casts={moviecasts} />
-            {/*<div className="review">
+            <div className="review">
               <h2>POPULAR REVIEW</h2>
-              {moviereviews.length ? <div className="review-container">{moviereviews}</div> :
+              {Object.keys(moviereviews).length ? <div className="review-container">{moviereviews.content}</div> :
                 <div className="review-empty"> NO REVIEWS FOUND :( </div>}
-            </div>*/}
+            </div>
             <div className="r-movie-list">
               <h2>RECOMMENDED MOVIES</h2>
               <RecommendedMovies r_movies={recommendedMovies} />

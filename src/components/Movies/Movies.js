@@ -8,7 +8,7 @@ import { gettrendingMovies } from "../../actions/movie_actions/gettrendingMovies
 import { getgenre } from "../../actions/movie_actions/getgenre";
 import VerticalMovieCarousel from "../VerticalMovieCarousel/VerticalMovieCarousel";
 import "./Movies.css";
-import HorizontalMovieCarousel from "../HorizontalMovieCarousel/HorizontalMovieCarousel";
+import HorizontalMovieCarousel from "../HorizontalCarousel/HorizontalMovieCarousel";
 import Footer from "../Footer/Footer";
 import Loading from "../Loader/Loading";
 class Movies extends Component {
@@ -22,15 +22,7 @@ class Movies extends Component {
   }
   render() {
     const { nowplayingMovies, popularMovies, topratedMovies, upcomingMovies, trendingMovies } = this.props;
-    if (
-      !popularMovies.length &&
-      !nowplayingMovies.length &&
-      !topratedMovies.length &&
-      !upcomingMovies.length &&
-      !trendingMovies.length
-    ) {
-      return <Loading name="Movies" />
-    }
+
     return (
       <React.Fragment>
         <div className="header">

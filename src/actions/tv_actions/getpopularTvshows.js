@@ -9,7 +9,7 @@ export const getpopularTvshows = () => dispatch => {
         .then(res => {
             dispatch({
                 type: GET_POPULAR_TVSHOWS,
-                payload: res.data.results.slice(0, 7)
+                payload: res.data.results.slice(0, 12)
             })
         }
 

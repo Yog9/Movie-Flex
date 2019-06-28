@@ -9,7 +9,7 @@ export const getonairTvshows = () => dispatch => {
         .then(res => {
             dispatch({
                 type: GET_ONAIR_TVSHOWS,
-                payload: res.data.results.slice(0, 7)
+                payload: res.data.results.slice(0, 12)
             })
         }
 
