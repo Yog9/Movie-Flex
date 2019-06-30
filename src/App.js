@@ -20,7 +20,7 @@ class App extends Component {
       <Router>
         <React.Fragment>
           <VerticalNav />
-          {this.props.isLoading ? <Loading /> : <Switch>
+         <Switch>
             <Route exact path="/movies" component={Movies} />
             <Route exact path="/tvshows" component={Tv} />
             <Route
@@ -31,7 +31,7 @@ class App extends Component {
             <Route path="/search" component={Search} />
             <Route path="/movies/details/:id" component={MovieDetails} />
           </Switch>
-          }
+          
         </React.Fragment>
       </Router>
     );
