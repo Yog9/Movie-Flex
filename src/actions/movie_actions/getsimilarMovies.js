@@ -8,13 +8,12 @@ export const getsimilarMovies = id => dispatch => {
   dispatch(itemsLoading(true));
   axios
     .get(`${url_movie}/${id}/similar?api_key=${API_KEY}&language=en-US&page=1`)
-    .then(res => {
+    .then((res) => {
+      dispatch(itemsLoading(false));
       dispatch({
         type: GET_SIMILAR_MOVIES,
         payload: res.data.results.slice(0, 7)
-      })
+      });
       console.log("res: ", res.data);
-    }
-
-    ).then(res => dispatch(itemsLoading(false)))
+    })
 };

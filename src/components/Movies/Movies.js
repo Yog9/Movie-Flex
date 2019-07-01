@@ -13,6 +13,7 @@ import Footer from "../Footer/Footer";
 import Loading from "../Loader/Loading";
 class Movies extends Component {
   componentDidMount() {
+    console.log("Did mount movies");
     this.props.getpopularMovies();
     this.props.getnowplayingMovies();
     this.props.gettopratedMovies();

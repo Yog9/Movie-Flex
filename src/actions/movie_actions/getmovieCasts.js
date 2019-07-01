@@ -6,10 +6,11 @@ import { itemsLoading } from "../itemsLoading";
 
 export const getmovieCasts = id => dispatch => {
   dispatch(itemsLoading(true));
-  axios.get(`${url_movie}/${id}/casts?api_key=${API_KEY}`).then(res =>
+  axios.get(`${url_movie}/${id}/casts?api_key=${API_KEY}`).then((res) => {
+    dispatch(itemsLoading(false));
     dispatch({
       type: GET_MOVIE_CASTS,
       payload: res.data.cast.slice(0, 10)
-    })
-  ).then(res => dispatch(itemsLoading(false)))
+    });
+  })
 };

@@ -8,10 +8,11 @@ export const getmovieDetails = id => dispatch => {
   dispatch(itemsLoading(true));
   axios
     .get(`${url_movie}/${id}?api_key=${API_KEY}&language=en-US`)
-    .then(res =>
+    .then((res) => {
+      dispatch(itemsLoading(false));
       dispatch({
         type: GET_MOVIE_DETAILS,
         payload: res.data
-      })
-    ).then(res => dispatch(itemsLoading(false)))
+      });
+    });
 };

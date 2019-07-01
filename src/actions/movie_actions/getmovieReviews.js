@@ -8,10 +8,11 @@ export const getmovieReviews = id => dispatch => {
   dispatch(itemsLoading(true));
   axios
     .get(`${url_movie}/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`)
-    .then(res =>
+    .then((res) => {
+      dispatch(itemsLoading(false))
       dispatch({
         type: GET_MOVIE_REVIEWS,
         payload: res.data.results[0]
-      })
-    ).then(res => dispatch(itemsLoading(false)))
+      });
+    });
 };

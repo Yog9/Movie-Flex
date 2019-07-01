@@ -10,10 +10,11 @@ export const getrecommendedMovies = id => dispatch => {
     .get(
       `${url_movie}/${id}/recommendations?api_key=${API_KEY}&language=en-US&page=1`
     )
-    .then(res =>
+    .then((res) => {
+      dispatch(itemsLoading(false));
       dispatch({
         type: GET_RECOMMENDED_MOVIES,
         payload: res.data.results.slice(0, 10)
-      })
-    ).then(res => dispatch(itemsLoading(false)))
+      });
+    });
 };

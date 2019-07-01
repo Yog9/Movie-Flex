@@ -9,13 +9,13 @@ export const getsearchResults = (query = 'harry') => dispatch => {
   console.log('In here!!!');
   axios
     .get(`${url}/search/multi?api_key=${API_KEY}&language=en-US&query=${query}&page=1&include_adult=false`)
-    .then(res => {
+    .then((res) => {
       console.log("In action of search results", res.data.results);
+      dispatch(itemsLoading(false));
       dispatch(
         {
           type: GET_SEARCH_RESULTS,
           payload: res.data.results
         })
-    }
-    ).then(res => dispatch(itemsLoading(false)))
+    })
 };

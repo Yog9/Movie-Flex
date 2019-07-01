@@ -5,9 +5,10 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case ITEMS_LOADING:
+            console.log("loading reducer: ", action.payload);
             return {
-                ...state,
-                isLoading: action.payload
+              ...state,
+              isLoading: action.payload,
             };
         default:
             return state;

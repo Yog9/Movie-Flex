@@ -98,12 +98,14 @@ class MovieDetails extends Component {
               </svg>
               <span class="play-trailer-content">Watch Trailer</span>
             </button>
-            <Modal show={this.state.show} handleClose={this.hideModal}>
-              {console.log(`https://www.youtube.com/embed/${movietrailers.key} movietrailers ${movietrailers}`)
-              }
-              {movietrailers.key ? <iframe title="1" src={`https://www.youtube.com/embed/${movietrailers.key}`}></iframe> : <p className="no-trailer"> Sorry! no trailer found</p>}
+            {
+              this.state.show ? (
+                <Modal show={this.state.show} handleClose={this.hideModal}>
+                  {movietrailers.key ? <iframe title="1" src={`https://www.youtube.com/embed/${movietrailers.key}`}></iframe> : <p className="no-trailer"> Sorry! no trailer found</p>}
+                </Modal>
+              ) : (null)
+            }
 
-            </Modal>
 
           </div>
           <div className="main">
