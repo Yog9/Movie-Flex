@@ -9,7 +9,7 @@ The purpose of this project was to get familiar with the basics of Redux.
 
 ### Getting Started
 Click the demo link or clone/download the repository on your local machine.
-Create a config folder inside the src folder. Inside config create a config.js file add the following snippet.
+Create a config folder inside the src folder. Inside config create a config.js file add the following code snippet.
 
 `export const url_movie = 'https://api.themoviedb.org/3/movie';`
 
