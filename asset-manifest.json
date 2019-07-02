@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Movie-Flex/static/css/main.7843ae5d.chunk.css",
-    "main.js": "/Movie-Flex/static/js/main.67106866.chunk.js",
-    "main.js.map": "/Movie-Flex/static/js/main.67106866.chunk.js.map",
+    "main.css": "/Movie-Flex/static/css/main.d9f65b11.chunk.css",
+    "main.js": "/Movie-Flex/static/js/main.b372af28.chunk.js",
+    "main.js.map": "/Movie-Flex/static/js/main.b372af28.chunk.js.map",
     "runtime~main.js": "/Movie-Flex/static/js/runtime~main.b87a8ca0.js",
     "runtime~main.js.map": "/Movie-Flex/static/js/runtime~main.b87a8ca0.js.map",
     "static/js/2.bda05b80.chunk.js": "/Movie-Flex/static/js/2.bda05b80.chunk.js",
     "static/js/2.bda05b80.chunk.js.map": "/Movie-Flex/static/js/2.bda05b80.chunk.js.map",
     "index.html": "/Movie-Flex/index.html",
-    "precache-manifest.99a875f52e83ea91c3545bdbbc1679f3.js": "/Movie-Flex/precache-manifest.99a875f52e83ea91c3545bdbbc1679f3.js",
+    "precache-manifest.ba16096e7f1a82c62673e5a14631cd6b.js": "/Movie-Flex/precache-manifest.ba16096e7f1a82c62673e5a14631cd6b.js",
     "service-worker.js": "/Movie-Flex/service-worker.js",
-    "static/css/main.7843ae5d.chunk.css.map": "/Movie-Flex/static/css/main.7843ae5d.chunk.css.map",
+    "static/css/main.d9f65b11.chunk.css.map": "/Movie-Flex/static/css/main.d9f65b11.chunk.css.map",
     "static/media/popcorn.svg": "/Movie-Flex/static/media/popcorn.fc9beeaa.svg"
   }
 }
