@@ -14,3 +14,10 @@ body {
 * {
   margin: 0;
 }
+
+@media (min-width: 1028px) {
+  .slick-slide img {
+    display: block;
+    width: 100% !important;
+}
+}
