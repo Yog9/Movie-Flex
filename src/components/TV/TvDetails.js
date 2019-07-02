@@ -102,7 +102,7 @@ class TvDetails extends Component {
             {
               this.state.show ? (
                 <Modal show={this.state.show} handleClose={this.hideModal}>
-                  {tvtrailers.key ? <iframe title="1" src={`https://www.youtube.com/embed/${tvtrailers.key}`}></iframe> : <p className="no-trailer"> Sorry! no trailer found</p>}
+                  { tvtrailers ? <iframe title="1" src={`https://www.youtube.com/embed/${tvtrailers.key}`}></iframe> : <p className="no-trailer"> Sorry! no trailer found</p>}
                 </Modal>
               ) : (null)
             }

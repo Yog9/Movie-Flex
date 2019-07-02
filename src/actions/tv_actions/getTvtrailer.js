@@ -12,7 +12,7 @@ export const getTvtrailer = (id) => dispatch => {
         dispatch(itemsLoading(false));
         dispatch({
                 type: GET_TVTRAILER,
-                payload: res.data.results.slice(0, 1)
+                payload: res.data.results[0]
             })
         }
 

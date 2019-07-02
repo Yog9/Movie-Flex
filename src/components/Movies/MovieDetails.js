@@ -114,11 +114,11 @@ class MovieDetails extends Component {
               <p>{moviedetails.overview}</p>
             </div>
             <CastCarousel casts={moviecasts} />
-            <div className="review">
+            {/*<div className="review">
               <h2>POPULAR REVIEW</h2>
               {Object.keys(moviereviews).length ? <div className="review-container">{moviereviews.content}</div> :
                 <div className="review-empty"> NO REVIEWS FOUND :( </div>}
-            </div>
+                </div>*/}
             <div className="r-movie-list">
               <h2>RECOMMENDED MOVIES</h2>
               <RecommendedMovies r_movies={recommendedMovies} />

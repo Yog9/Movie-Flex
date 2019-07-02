@@ -27,11 +27,7 @@ class Search extends Component {
             console.log(temp)
         }
     };
-    componentDidMount() {
-        this.props.getsearchResults('harry potter')
-        console.log('in search component')
-        console.log(this.props.getsearchResults('harry potter'))
-    }
+  
 
     render() {
         const { searchResults } = this.props;
@@ -45,6 +41,7 @@ class Search extends Component {
                         <input type="search" placeholder="🔍 search a movie by title" aria-label="search" required="" onChange={this.handleChange} />
                         <button type="submit">search</button>
                     </form>
+                    <h2>Search Results for {this.state.searchFieldValue}</h2>
                     <div className="search-results">
                         {searchResults && searchResults.map(movie => <figure key={movie.id} className="movie-item">
                             <Link to={`/movies/details/${movie.id}`}>

@@ -1,3 +1,4 @@
+/* 1. NAV */
 nav {
   background: black;
   position: fixed;
@@ -5,10 +6,6 @@ nav {
   width: 100%;
   height: 60px;
   z-index: 100;
-}
-
-.nav-btn:hover {
-  color: white;
 }
 .nav-btn {
   background: none;
@@ -19,41 +16,39 @@ nav {
   cursor: pointer;
   outline: 0;
 }
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  margin-top: 60px;
-  left: 0;
+.nav-btn:hover {
+  color: white;
+}
+nav ul {
   background: #131517;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 6px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 230px;
+  transform: translateX(-100%);
   transition: 0.4s ease;
 }
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #f1f1f1;
+nav ul li a {
   display: block;
+  padding: 14px;
+  color: #626977;
   font-weight: 500;
-  letter-spacing: 1px;
-  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #fff;
+  background: #61dafb;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.open {
-  width: 230px;
-}
 .selected {
   color: #fff;
   background: #61dafb;
 }
-.close {
-  width: 0px;
+
+.open {
+  transform: translateX(0);
 }
+
+/*
+#131517*/

@@ -1,6 +1,6 @@
 .cover-image{
     display: block;
-    height: 90vh;
+    height: 52vh;
     width: 100%;
     padding-bottom: 10px;
 }
@@ -9,16 +9,19 @@
     width: 85vw;
     margin: auto;
 }
+.movie-item{
+    width:50%;
+}
 .moviedetails h2{
-    margin-left:30px;
+    margin-left:33px;
     color:white;
     margin-bottom:10px;
 }
 .movies{
     display:grid;
-    grid-template-columns: 250px 1fr 200px;
+    grid-template-columns: 1fr;
     color:white;
-
+    justify-items: center;
 }
 .tagline{
     color:white;
@@ -44,6 +47,7 @@ height: 1em;
     cursor: pointer;
     color: #fff;
     height: 40px;
+    margin-top:10px;
     padding: 0 10px;
     background: transparent;
     border: .5px solid #fff;
@@ -105,4 +109,21 @@ height: 1em;
     letter-spacing: 0.4rem;
     padding: 25px 0;
     text-transform: uppercase;
+}
+
+.poster{
+    margin-bottom:10px;
+}
+@media (min-width:1024px){
+
+.cover-image{
+    height: 70vh;
+}
+
+    .movies {
+    
+      grid-template-columns: 250px 1fr 200px;
+     
+  }
+ 
 }

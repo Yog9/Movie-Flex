@@ -7,7 +7,6 @@ import movietrailerReducer from "./movie_reducers/movietrailerReducer";
 import nowplayingmoviesReducer from "./movie_reducers/nowplayingmoviesReducer";
 import popularmoviesReducer from "./movie_reducers/popularmoviesReducer";
 import recommendedmoviesReducer from "./movie_reducers/recommendedmoviesReducer";
-import similarmoviesReducer from "./movie_reducers/similarmoviesReducer";
 import topratedmoviesReducer from "./movie_reducers/topratedmoviesReducer";
 import upcomingmoviesReducer from "./movie_reducers/upcomingmoviesReducer";
 import genreReducer from "./movie_reducers/genreReducer";
@@ -34,7 +33,6 @@ export default combineReducers({
   nowplayingMovies: nowplayingmoviesReducer,
   popularmovies: popularmoviesReducer,
   recommendedMovies: recommendedmoviesReducer,
-  similarMovies: similarmoviesReducer,
   topratedMovies: topratedmoviesReducer,
   upcomingMovies: upcomingmoviesReducer,
   genre: genreReducer,

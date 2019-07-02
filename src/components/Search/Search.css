@@ -1,6 +1,7 @@
 .container-search{
     width: 90%;
-    margin: 10% auto;
+    margin: auto;
+    margin-top:20%;
 }
 .searchbar {
         width: 100%;
@@ -37,8 +38,27 @@
     }
     .search-results {
         display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
         grid-gap: 20px;
         justify-items: center;
         padding: .7rem;
     }
+h2{
+    color: #fff;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+    @media (min-width:1024px){
+        .search-results {
+            display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
+
+    
+        .container-search{
+        margin-top:10%;
+    }
+}

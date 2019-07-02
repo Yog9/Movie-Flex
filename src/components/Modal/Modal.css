@@ -41,8 +41,8 @@
         background: transparent;
         outline: none;
         border: none;
-        position: relative;
-        bottom:108%;
+        position:relative;
+        bottom:1%;
         float:right;
   }
   .close:focus, .close:hover {

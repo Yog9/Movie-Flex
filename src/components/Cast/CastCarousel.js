@@ -58,15 +58,12 @@ export default function CastCarousel(props) {
                 {
                     casts.map(cast => (
                         <figure key={cast.cast_id} className="h-carousel-item">
-
-                            <img
-                                src={`${path}${imgSize}${cast.profile_path}`}
-                                alt={cast.name}
-                                className="carousel-img"
-                            />
-
-
-                            <figcaption>
+                        <img
+                        src={`${path}${imgSize}${cast.profile_path}`}
+                        alt={cast.name}
+                        className="carousel-img"
+                        />
+                        <figcaption>
                                 <h5 className="cast-name">{cast.name}</h5>
                             </figcaption>
                         </figure>

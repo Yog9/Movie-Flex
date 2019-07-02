@@ -1,9 +1,10 @@
 .recommended-movies{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    justify-items:center;
 }
 .movie-image{
-    width: 60%;
+    width: 90%;
     margin-top: 0;
     height: 210px;
     border-radius: 5px;
@@ -24,3 +25,9 @@
     margin-bottom:6px;
     width: 135px;
   }
+  @media (min-width:1024px){
+  .recommended-movies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+}
