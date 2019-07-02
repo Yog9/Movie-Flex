@@ -12,6 +12,19 @@ import topratedmoviesReducer from "./movie_reducers/topratedmoviesReducer";
 import upcomingmoviesReducer from "./movie_reducers/upcomingmoviesReducer";
 import genreReducer from "./movie_reducers/genreReducer";
 import trendingmoviesReducer from "./movie_reducers/trendingmoviesReducer";
+
+import tvcastReducer from "../reducers/tv_reducers/tvcastReducer";
+import tvdetailsReducer from "./tv_reducers/tvdetailsReducer";
+import tvgenreReducer from "./tv_reducers/tvgenreReducer";
+import tvreviewsReducer from "./tv_reducers/tvreviewsReducer";
+import tvtrailerReducer from "./tv_reducers/tvtrailerReducer";
+import similartvshowsReducer from "./tv_reducers/similartvshowsReducer";
+import populartvshowsReducer from "./tv_reducers/populartvshowsReducer";
+import onairtvshowsReducer from "./tv_reducers/onairtvshowsReducer";
+import airingtodaytvshowsReducer from "./tv_reducers/airingtodaytvshowsReducer";
+import itemsloadingReducer from "./itemsloadingReducer";
+import searchReducer from "./searchReducer";
+
 export default combineReducers({
   //all state
   moviecasts: moviecastReducer,
@@ -25,5 +38,20 @@ export default combineReducers({
   topratedMovies: topratedmoviesReducer,
   upcomingMovies: upcomingmoviesReducer,
   genre: genreReducer,
-  trendingMovies: trendingmoviesReducer
+  trendingMovies: trendingmoviesReducer,
+
+  isLoading: itemsloadingReducer,
+  searchResults: searchReducer,
+  tvcasts: tvcastReducer,
+  tvdetails: tvdetailsReducer,
+  tvgenre: tvgenreReducer,
+  tvreviews: tvreviewsReducer,
+  tvtrailers: tvtrailerReducer,
+  tvcasts: tvcastReducer,
+  topratedTvshows: topratedmoviesReducer,
+  similarTvshows: similartvshowsReducer,
+  popularTvshows: populartvshowsReducer,
+  onairTvshows: onairtvshowsReducer,
+  airingtodayTvshows: airingtodaytvshowsReducer
+
 });

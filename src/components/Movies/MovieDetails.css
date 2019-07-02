@@ -4,10 +4,6 @@
     width: 100%;
     padding-bottom: 10px;
 }
-body{
-    background: #1f2534
-}
-
 
 .container {
     width: 85vw;
@@ -66,13 +62,12 @@ height: 1em;
     margin-left:27px;
     padding-top:19px;
 }
+.synopsis p{
+    color:white;
+}
 
 .main{
     padding: 4rem 0 4rem 0;
-
-}
-.synopsis p{
-    margin-top:10px;
 }
 .transparent-pill{
     border: 1px solid #fff;
@@ -102,7 +97,7 @@ height: 1em;
     text-align: center;
     color:white;
 }
-.review h2{
+.review h2,.r-movie-list h2,.synopsis h2{
     color: #fff;
     font-family: "Alegreya Sans", sans-serif;
     font-size: 1.5rem;

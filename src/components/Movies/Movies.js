@@ -8,10 +8,12 @@ import { gettrendingMovies } from "../../actions/movie_actions/gettrendingMovies
 import { getgenre } from "../../actions/movie_actions/getgenre";
 import VerticalMovieCarousel from "../VerticalMovieCarousel/VerticalMovieCarousel";
 import "./Movies.css";
-import HorizontalMovieCarousel from "../HorizontalMovieCarousel/HorizontalMovieCarousel";
+import HorizontalMovieCarousel from "../HorizontalCarousel/HorizontalMovieCarousel";
 import Footer from "../Footer/Footer";
+import Loading from "../Loader/Loading";
 class Movies extends Component {
   componentDidMount() {
+    console.log("Did mount movies");
     this.props.getpopularMovies();
     this.props.getnowplayingMovies();
     this.props.gettopratedMovies();
@@ -20,7 +22,8 @@ class Movies extends Component {
     this.props.getgenre();
   }
   render() {
-    const { nowplayingMovies } = this.props;
+    const { nowplayingMovies, popularMovies, topratedMovies, upcomingMovies, trendingMovies } = this.props;
+
     return (
       <React.Fragment>
         <div className="header">
@@ -34,25 +37,25 @@ class Movies extends Component {
           <div className="container pb-6">
             <HorizontalMovieCarousel
               carouselName="Popular"
-              movies={this.props.popularMovies}
+              movies={popularMovies}
               genre={this.props.genre}
             />
             <hr className="section-separator" />
             <HorizontalMovieCarousel
               carouselName="Trending"
-              movies={this.props.trendingMovies}
+              movies={trendingMovies}
               genre={this.props.genre}
             />
             <hr className="section-separator" />
             <HorizontalMovieCarousel
               carouselName="Top Rated"
-              movies={this.props.topratedMovies}
+              movies={topratedMovies}
               genre={this.props.genre}
             />
             <hr className="section-separator" />
             <HorizontalMovieCarousel
               carouselName="Upcoming"
-              movies={this.props.upcomingMovies}
+              movies={upcomingMovies}
               genre={this.props.genre}
             />
             <hr className="section-separator" />
