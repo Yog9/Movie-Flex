@@ -19,10 +19,10 @@ Create a config folder inside the src folder. Inside config create a config.js f
 
 `export const url_tv = 'https://api.themoviedb.org/3/tv';`
 
-# Install dependencies
+##### Install dependencies
 `npm install`
 
-# Run Movie Flex React from root
+##### Run Movie-Flex from the root directory.
 `npm start`
 
 ### Built With
