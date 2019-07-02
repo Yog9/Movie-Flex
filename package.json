@@ -2,6 +2,7 @@
   "name": "redux_movie",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Yog9.github.io/Movie-Flex",
   "dependencies": {
     "axios": "^0.18.0",
     "react": "^16.8.6",
@@ -14,6 +15,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
