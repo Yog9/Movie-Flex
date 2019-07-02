@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Redirect,
   Switch,
   Route
@@ -16,7 +16,7 @@ import TvDetails from "./components/TV/TvDetails";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter basename="/Movie-Flex">
         <React.Fragment>
 ]         <VerticalNav />
           <Loading />
@@ -33,7 +33,7 @@ class App extends Component {
             <Route path="/tvshows/details/:id" component={TvDetails} />
           </Switch>
         </React.Fragment>
-      </Router>
+      </HashRouter>
     );
   }
 }
