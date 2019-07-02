@@ -15,27 +15,7 @@ export default function VerticalTvCarousel(props) {
         slidesToScroll: 1,
         dots: true,
         vertical: false,
-        verticalSwiping: true,
-        appendDots: dots => (
-
-            <ul style={{
-                margin: "0px",
-                borderRadius: "50%",
-                color: "red"
-            }}> {dots} </ul>
-
-        ),
-        customPaging: i => (
-            <div
-                style={{
-                    width: "15px",
-                    color: "blue",
-                    border: " 1px solid red",
-                    borderRadius: "50%"
-                }}
-            >
-            </div>
-        ),
+        horizontalSwiping: true,
         arrows: false
     };
 

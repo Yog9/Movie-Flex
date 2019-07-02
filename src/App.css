@@ -1,6 +1,13 @@
+body{
+  overflow-x: hidden;
+}
 .container {
   width: 85vw;
   margin: auto;
+}
+.slick-dots li button:focus, .slick-dots li button:hover {
+  outline: 0;
+  cursor:pointer !important;
 }
 ul {
   list-style: none;
