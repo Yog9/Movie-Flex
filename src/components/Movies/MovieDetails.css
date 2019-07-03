@@ -8,6 +8,7 @@
 .container {
     width: 85vw;
     margin: auto;
+    z-index: 0;
 }
 .movie-item{
     width:50%;
