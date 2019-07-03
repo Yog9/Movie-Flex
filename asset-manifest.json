@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Movie-Flex/static/css/main.c60f60a0.chunk.css",
+    "main.css": "/Movie-Flex/static/css/main.272e18fc.chunk.css",
     "main.js": "/Movie-Flex/static/js/main.99e78f90.chunk.js",
     "main.js.map": "/Movie-Flex/static/js/main.99e78f90.chunk.js.map",
     "runtime~main.js": "/Movie-Flex/static/js/runtime~main.b87a8ca0.js",
@@ -8,9 +8,9 @@
     "static/js/2.a93751c7.chunk.js": "/Movie-Flex/static/js/2.a93751c7.chunk.js",
     "static/js/2.a93751c7.chunk.js.map": "/Movie-Flex/static/js/2.a93751c7.chunk.js.map",
     "index.html": "/Movie-Flex/index.html",
-    "precache-manifest.e86f49fd86108145d6ebed43df52ce1a.js": "/Movie-Flex/precache-manifest.e86f49fd86108145d6ebed43df52ce1a.js",
+    "precache-manifest.63501a0af1af908cf075b7c340a2ff06.js": "/Movie-Flex/precache-manifest.63501a0af1af908cf075b7c340a2ff06.js",
     "service-worker.js": "/Movie-Flex/service-worker.js",
-    "static/css/main.c60f60a0.chunk.css.map": "/Movie-Flex/static/css/main.c60f60a0.chunk.css.map",
+    "static/css/main.272e18fc.chunk.css.map": "/Movie-Flex/static/css/main.272e18fc.chunk.css.map",
     "static/media/popcorn.svg": "/Movie-Flex/static/media/popcorn.fc9beeaa.svg"
   }
 }
