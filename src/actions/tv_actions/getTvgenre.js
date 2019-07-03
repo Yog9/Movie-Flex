@@ -9,6 +9,7 @@ export const gettvgenre = () => dispatch => {
     axios
         .get(`${url}/genre/tv/list?api_key=${API_KEY}&language=en-US`)
         .then(res =>{
+            console.log("In action of tv genre results", res.data);
             dispatch(itemsLoading(false));
             dispatch({
                 type: GET_TV_GENRE,

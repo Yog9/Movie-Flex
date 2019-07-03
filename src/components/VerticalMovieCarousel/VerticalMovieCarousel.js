@@ -39,7 +39,7 @@ export default function VerticalMovieCarousel(props) {
                   {movie.genre_ids.map(genre => {
                     //console.log(props.genre);
                     props.genre.map(genre_api => {
-                      if (genre_api.id == genre) {
+                      if (genre_api.id === genre) {
                         return (x = genre_api.name);
                       }
                     });

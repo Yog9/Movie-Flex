@@ -10,7 +10,6 @@ import VerticalMovieCarousel from "../VerticalMovieCarousel/VerticalMovieCarouse
 import "./Movies.css";
 import HorizontalMovieCarousel from "../HorizontalCarousel/HorizontalMovieCarousel";
 import Footer from "../Footer/Footer";
-import Loading from "../Loader/Loading";
 class Movies extends Component {
   componentDidMount() {
     console.log("Did mount movies");

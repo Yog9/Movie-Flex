@@ -10,7 +10,7 @@ import CastCarousel from "../Cast/CastCarousel";
 
 import RecommendedMovies from "../RecommendedMovies/RecommendedMovies";
 import Modal from "../Modal/Modal";
-import Loading from "../Loader/Loading";
+
 class MovieDetails extends Component {
   state = {
     id: null,
@@ -52,7 +52,7 @@ class MovieDetails extends Component {
     const {
       moviedetails,
       moviecasts,
-      moviereviews,
+      //moviereviews,
       movietrailers,
       recommendedMovies
     } = this.props;
@@ -68,7 +68,7 @@ class MovieDetails extends Component {
         <div className="container">
           <div className="movies">
 
-            <img className="poster" src={`${path}w154${moviedetails.poster_path}`} />
+            <img className="poster" src={`${path}w154${moviedetails.poster_path}`}  alt={moviedetails.original_title}/>
             <div className="moviedetails">
               <h2>{moviedetails.original_title}</h2>
               <div className="user-score">

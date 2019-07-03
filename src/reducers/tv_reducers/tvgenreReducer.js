@@ -5,6 +5,7 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case GET_TV_GENRE:
+                console.log("In genre tv reducer", action.payload);
             return {
                 ...state,
                 tvgenre: action.payload

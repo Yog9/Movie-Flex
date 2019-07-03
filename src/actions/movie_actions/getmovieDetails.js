@@ -1,4 +1,4 @@
-import { GET_MOVIE_DETAILS, ITEMS_LOADING } from "../types";
+import { GET_MOVIE_DETAILS } from "../types";
 import { url_movie } from "../../config/config";
 import { API_KEY } from "../../config/config";
 import { itemsLoading } from "../../actions/itemsLoading";

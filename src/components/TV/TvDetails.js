@@ -10,7 +10,6 @@ import CastCarousel from "../Cast/CastCarousel";
 
 
 import Modal from "../Modal/Modal";
-import Loading from "../Loader/Loading";
 import SimilarTvshows from "../SimilarTvshows";
 class TvDetails extends Component {
   state = {
@@ -34,7 +33,7 @@ class TvDetails extends Component {
     this.props.getTvtrailer(id);
     this.props.gettvCasts(id);
     /*this.props.getmovieReviews(id);*/
-    this.props. gettvDetails(id);
+    this.props.gettvDetails(id);
     this.props.getsimilarTvshows(id);
   }
   componentWillReceiveProps(prevProps) {
@@ -69,7 +68,7 @@ class TvDetails extends Component {
         <div className="container">
           <div className="movies">
 
-            <img className="poster" src={`${path}w154${tvdetails.poster_path}`} />
+            <img className="poster" src={`${path}w154${tvdetails.poster_path}`}   alt={tvdetails.name} />
             <div className="moviedetails">
               <h2>{tvdetails.name}</h2>
               <div className="user-score">

@@ -46,7 +46,6 @@ export default combineReducers({
   tvgenre: tvgenreReducer,
   tvreviews: tvreviewsReducer,
   tvtrailers: tvtrailerReducer,
-  tvcasts: tvcastReducer,
   topratedTvshows: topratedtvshowsReducer,
   similarTvshows: similartvshowsReducer,
   popularTvshows: populartvshowsReducer,
