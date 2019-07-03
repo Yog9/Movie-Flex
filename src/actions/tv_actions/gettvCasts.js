@@ -6,7 +6,7 @@ import axios from "axios";
 
 export const gettvCasts = id => dispatch => {
     dispatch(itemsLoading(true));
-    axios.get(`${url_tv}/${id}/casts?api_key=${API_KEY}`).then(res =>{
+    axios.get(`${url_tv}/${id}/credits?api_key=${API_KEY}&language=en-US`).then(res =>{
         dispatch(itemsLoading(false));
         dispatch({
             type: GET_TV_CASTS,

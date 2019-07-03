@@ -70,7 +70,7 @@ const mapStateToProps = state => ({
     onairTvshows: state.onairTvshows.onairTvshows,
     airingtodayTvshows: state.airingtodayTvshows.airingtodayTvshows,
     topratedTvshows: state.topratedTvshows.topratedTvshows,
-    tvgenre: state.genre.tvgenre
+    tvgenre: state.tvgenre.tvgenre
 });
 export default connect(
     mapStateToProps,
