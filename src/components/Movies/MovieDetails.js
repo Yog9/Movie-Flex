@@ -113,7 +113,7 @@ class MovieDetails extends Component {
               <h2>SYNOPSIS</h2>
               <p>{moviedetails.overview}</p>
             </div>
-            <CastCarousel casts={moviecasts} />
+            {moviecasts.length>0? <CastCarousel casts={moviecasts} />:null}
             <div className="r-movie-list">
               <h2>RECOMMENDED MOVIES</h2>
               <RecommendedMovies r_movies={recommendedMovies} />
