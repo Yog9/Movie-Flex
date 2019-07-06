@@ -9,7 +9,6 @@ import VerticalTvCarousel from "../VerticalMovieCarousel/VerticalTvCarousel";
 import "../Movies/Movies.css";
 import HorizontalTvCarousel from "../HorizontalCarousel/HorizontalTvCarousel";
 import Footer from "../Footer/Footer";
-import Loading from "../Loader/Loading";
 class Tv extends Component {
     componentDidMount() {
         this.props.getpopularTvshows();
@@ -20,15 +19,15 @@ class Tv extends Component {
     }
     render() {
         const { airingtodayTvshows, popularTvshows, onairTvshows, topratedTvshows, tvgenre } = this.props;
-        if (
+       /* if (
             !popularTvshows.length &&
             !airingtodayTvshows.length &&
             !onairTvshows.length &&
-            !topratedTvshows &&
-            !tvgenre
+            !topratedTvshows.length &&
+            !tvgenre.length
         ) {
             return <Loading name="Tvshows" />
-        }
+        }*/
         return (
             <React.Fragment>
                 <div className="header">
@@ -54,7 +53,7 @@ class Tv extends Component {
                         <hr className="section-separator" />
                         <HorizontalTvCarousel
                             carouselName="Top Rated"
-                            movies={topratedTvshows}
+                            tvshows={topratedTvshows}
                             genre={tvgenre}
                         />
                         <hr className="section-separator" />

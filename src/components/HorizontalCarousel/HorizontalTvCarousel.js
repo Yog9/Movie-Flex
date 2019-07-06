@@ -70,7 +70,7 @@ export default function HorizontalTvCarousel(props) {
                             <Link to={`/tvshows/details/${tvshow.id}`}>
                                 <img
                                     src={`${path}${imgSize}${tvshow.poster_path}`}
-                                    alt={tvshow.title}
+                                    alt={tvshow.name}
                                     className="carousel-img"
                                 />
                                 <p className="rating">
@@ -85,7 +85,7 @@ export default function HorizontalTvCarousel(props) {
                                 </p>
                             </Link>
                             <figcaption>
-                                <h5 className="movie-name">{tvshow.title}</h5>
+                                <h5 className="movie-name">{tvshow.name}</h5>
                                 <p className="genre_name">
                                     {handleGenreName(tvshow.genre_ids[0])}
                                 </p>

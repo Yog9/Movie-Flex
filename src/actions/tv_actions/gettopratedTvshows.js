@@ -7,7 +7,7 @@ import { itemsLoading} from "../../actions/itemsLoading";
 export const gettopratedTvshows = () => dispatch => {
     dispatch(itemsLoading(true));
     axios
-        .get(`${url_tv}/top_rated?api_key=${API_KEY}&language=en-US&page=1`)
+        .get(`https://api.themoviedb.org/3/tv/top_rated?api_key=${API_KEY}&language=en-US&page=1`)
         .then(res => {
             console.log("In top rated tv action", res.data);
             dispatch(itemsLoading(false));
