@@ -109,16 +109,17 @@ class TvDetails extends Component {
 
           </div>
           <div className="main">
-            <div className="synopsis">
+            {tvdetails.overview?<div className="synopsis">
               <h2>SYNOPSIS</h2>
               <p>{tvdetails.overview}</p>
-            </div>
+            </div>:null}
+            
             {tvcasts.length>0? <CastCarousel casts={tvcasts} />:null}
-           
-            <div className="r-movie-list">
+           {similarTvshows.length>0?<div className="r-movie-list">
               <h2>SIMILIAR TV SHOWS</h2>
               <SimilarTvshows s_tvshow={similarTvshows} />
-            </div>
+            </div>:null}
+            
           </div>
         </div>
 

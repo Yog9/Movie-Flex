@@ -17,6 +17,8 @@ class App extends Component {
   render() {
     return (
       <HashRouter basename="/Movie-Flex">
+   
+   
         <React.Fragment>
 ]         <VerticalNav />
           <Loading />

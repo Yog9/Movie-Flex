@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
 import "./Casts.css";
 export default function CastCarousel(props) {
     const { casts } = props;
@@ -50,7 +49,6 @@ export default function CastCarousel(props) {
             }
         ]
     };
-    let image="https://www.themoviedb.org/person/"
     const path = "https://image.tmdb.org/t/p/";
     const imgSize = "w154";
     return (

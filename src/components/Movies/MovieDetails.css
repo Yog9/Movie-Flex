@@ -12,6 +12,7 @@
 }
 .movie-item{
     width:50%;
+    cursor:pointer;
 }
 .moviedetails h2{
     margin-left:33px;
