@@ -10,7 +10,7 @@ export const getmovieCasts = id => dispatch => {
     dispatch(itemsLoading(false));
     dispatch({
       type: GET_MOVIE_CASTS,
-      payload: res.data.cast.slice(0, 10)
+      payload: res.data.cast.slice(0, 6)
     });
   })
 };

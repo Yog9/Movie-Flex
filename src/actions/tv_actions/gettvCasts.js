@@ -10,7 +10,7 @@ export const gettvCasts = id => dispatch => {
         dispatch(itemsLoading(false));
         dispatch({
             type: GET_TV_CASTS,
-            payload: res.data.cast.slice(0, 9)
+            payload: res.data.cast.slice(0, 6)
         })
     }
     );

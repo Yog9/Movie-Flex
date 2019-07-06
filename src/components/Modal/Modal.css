@@ -5,6 +5,7 @@
     z-index:2;
     width:100%;
     height: 100%;
+    cursor:pointer;
     background: rgba(0, 0, 0, 0.6);
   }
   
@@ -29,26 +30,9 @@
   
   .display-block {
     display: block;
+    cursor:pointer;
   }
   
   .display-none {
     display: none;
   }
-  
-  
-    .close {
-        color: #fff;
-        font-size: 2rem;
-        background: transparent;
-        outline: none;
-        border: none;
-        position:relative;
-        bottom:1%;
-        float:right;
-  }
-  .close:focus, .close:hover {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    color: tomato;
-}

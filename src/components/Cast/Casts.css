@@ -1,3 +1,6 @@
+.h-carousel-item{
+  width:70%;
+}
 .carousel-title {
     color: #fff;
     font-family: "Alegreya Sans", sans-serif;
@@ -21,26 +24,6 @@
     transition: transform 0.2s, -webkit-transform 0.2s;
     transform: scale(1.05);
   }
-  .slick-prev {
-    top: 105px;
-    left: -2px;
-    border: 0;
-    width: 30px;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.7) !important;
-    height: 210px;
-    border-radius: 5px;
-  }
-  .slick-next {
-    top: 105px;
-    right: 4.9px;
-    border: 0;
-    width: 30px;
-    border-radius: 5px;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.7) !important;
-    height: 210px;
-  }
   .cast-name {
     color: rgba(255, 255, 255, 0.9);
     font-family: "Roboto", sans-serif;
@@ -48,4 +31,28 @@
     margin: 5px 0 0;
     margin-top: 8px;
     width: 135px;
+  }
+  .cast-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  @media(min-width:480px){
+    .cast-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+
+  @media(min-width:768px){
+    .cast-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+
+  @media(min-width:1024px){
+    .cast-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
   }

@@ -34,6 +34,7 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 36px;
+  text-align: left;
 }
 v-img {
   width: 100%;

@@ -6,7 +6,7 @@ import { getmovieCasts } from "../../actions/movie_actions/getmovieCasts";
 import { getmovieDetails } from "../../actions/movie_actions/getmovieDetails";
 import { getmovieReviews } from "../../actions/movie_actions/getmovieReviews";
 import { getrecommendedMovies } from "../../actions/movie_actions/getrecommendedMovies";
-import CastCarousel from "../Cast/CastCarousel";
+import Cast from "../Cast/Cast";
 
 import RecommendedMovies from "../RecommendedMovies/RecommendedMovies";
 import Modal from "../Modal/Modal";
@@ -113,7 +113,7 @@ class MovieDetails extends Component {
               <h2>SYNOPSIS</h2>
               <p>{moviedetails.overview}</p>
           </div>):null}
-            {moviecasts.length>0? <CastCarousel casts={moviecasts} />:null}
+            {moviecasts.length>0? <Cast casts={moviecasts} />:null}
             {recommendedMovies.length>0?<div className="r-movie-list">
               <h2>RECOMMENDED MOVIES</h2>
               <RecommendedMovies r_movies={recommendedMovies} />

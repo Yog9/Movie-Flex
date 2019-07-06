@@ -1,5 +1,4 @@
 import { GET_TOPRATED_TVSHOWS } from "../types";
-import { url_tv } from "../../config/config";
 import { API_KEY } from "../../config/config";
 import axios from "axios";
 import { itemsLoading} from "../../actions/itemsLoading";

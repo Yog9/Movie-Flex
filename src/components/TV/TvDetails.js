@@ -4,9 +4,8 @@ import "../Movies/MovieDetails.css";
 import { getTvtrailer } from "../../actions/tv_actions/getTvtrailer";
 import { gettvCasts } from "../../actions/tv_actions/gettvCasts";
 import {  gettvDetails} from "../../actions/tv_actions/gettvDetails";
-//import { getmovieReviews } from "../../actions/movie_actions/getmovieReviews";
 import { getsimilarTvshows } from "../../actions/tv_actions/getsimilarTvshows";
-import CastCarousel from "../Cast/CastCarousel";
+import Cast from "../Cast/Cast";
 
 
 import Modal from "../Modal/Modal";
@@ -114,7 +113,7 @@ class TvDetails extends Component {
               <p>{tvdetails.overview}</p>
             </div>:null}
             
-            {tvcasts.length>0? <CastCarousel casts={tvcasts} />:null}
+            {tvcasts.length>0? <Cast casts={tvcasts} />:null}
            {similarTvshows.length>0?<div className="r-movie-list">
               <h2>SIMILIAR TV SHOWS</h2>
               <SimilarTvshows s_tvshow={similarTvshows} />
