@@ -34,6 +34,7 @@ class TvDetails extends Component {
     /*this.props.getmovieReviews(id);*/
     this.props.gettvDetails(id);
     this.props.getsimilarTvshows(id);
+    window.scrollTo(0, 0);
   }
   componentWillReceiveProps(prevProps) {
     if (prevProps.match.params.id !== this.props.match.params.id) {

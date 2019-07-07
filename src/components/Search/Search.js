@@ -43,7 +43,8 @@ class Search extends Component {
                     </form>
                     <h2>Search Results for {this.state.searchFieldValue}</h2>
                     <div className="search-results">
-                        {searchResults==='undefined'?<p>No results found</p>:(searchResults && searchResults.map(movie => <figure key={movie.id} className="movie-item">
+                       
+                        {searchResults && searchResults.map(movie => <figure key={movie.id} className="movie-item">
                             <Link to={`/movies/details/${movie.id}`}>
                                 <img
                                     src={`${path}${imgSize}${movie.poster_path}`}
@@ -53,18 +54,7 @@ class Search extends Component {
                             </Link>
                             <h5 className="movie-name">{movie.original_title}</h5>
                         </figure>)
-                        )}
-                       {/* {searchResults && searchResults.map(movie => <figure key={movie.id} className="movie-item">
-                            <Link to={`/movies/details/${movie.id}`}>
-                                <img
-                                    src={`${path}${imgSize}${movie.poster_path}`}
-                                    alt={movie.original_title}
-                                    className="movie-image"
-                                />
-                            </Link>
-                            <h5 className="movie-name">{movie.original_title}</h5>
-                        </figure>)
-                        }*/}
+                        }
                     </div>
                 </div>
             </React.Fragment>
