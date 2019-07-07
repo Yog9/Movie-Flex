@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Movie-Flex/static/css/main.7f22d3de.chunk.css",
-    "main.js": "/Movie-Flex/static/js/main.c93bae1d.chunk.js",
-    "main.js.map": "/Movie-Flex/static/js/main.c93bae1d.chunk.js.map",
+    "main.js": "/Movie-Flex/static/js/main.e97ccf0a.chunk.js",
+    "main.js.map": "/Movie-Flex/static/js/main.e97ccf0a.chunk.js.map",
     "runtime~main.js": "/Movie-Flex/static/js/runtime~main.b87a8ca0.js",
     "runtime~main.js.map": "/Movie-Flex/static/js/runtime~main.b87a8ca0.js.map",
     "static/js/2.13072c12.chunk.js": "/Movie-Flex/static/js/2.13072c12.chunk.js",
     "static/js/2.13072c12.chunk.js.map": "/Movie-Flex/static/js/2.13072c12.chunk.js.map",
     "index.html": "/Movie-Flex/index.html",
-    "precache-manifest.58ed7fff7add18ad26fabb8e5cb4588c.js": "/Movie-Flex/precache-manifest.58ed7fff7add18ad26fabb8e5cb4588c.js",
+    "precache-manifest.3c310b9b127c5ae26da55e3f5d41879e.js": "/Movie-Flex/precache-manifest.3c310b9b127c5ae26da55e3f5d41879e.js",
     "service-worker.js": "/Movie-Flex/service-worker.js",
     "static/css/main.7f22d3de.chunk.css.map": "/Movie-Flex/static/css/main.7f22d3de.chunk.css.map",
     "static/media/popcorn.svg": "/Movie-Flex/static/media/popcorn.fc9beeaa.svg"
