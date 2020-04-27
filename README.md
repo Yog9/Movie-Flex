@@ -1,5 +1,9 @@
 # Movie Flex
-[Demo Movie Flex Here](https://yog9.github.io/Movie-Flex/)
+[Demo of Movie Flex](https://yog9.github.io/Movie-Flex/)
+
+
+![](/src/images/MovieFlex.png)
+
 ### Summary
 
 Movie Flex is a movie application created with React/Redux in which users can browse Movies and TV shows from TMDB API to find more information about them. Also provided a search functionality for searching movies/TV shows.
