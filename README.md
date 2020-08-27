@@ -46,6 +46,7 @@ Create a config folder inside the src folder. Inside config create a config.js f
 ### Coming Soon 
 - [ ] Add watchlist functionality using Mongo DB as the database.
 - [ ] Login functionality with Mongo DB as the database.
+- [ ] Code refactoring with TypeScript/React.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
